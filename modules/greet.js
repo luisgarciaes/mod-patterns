@@ -1,1 +1,2 @@
-console.log('Greetings from the module');
+let greet = () => console.log('Greetings from the module');
+greet();
