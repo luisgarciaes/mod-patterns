@@ -1,14 +1,14 @@
 let client = {
     name: 'Luis',
     lastName:'García',
-    getName: function(){
-        return `${this.name} `+ `${this.lastName}`
-    },
     address: {
-        street: 'Abasolo 849',
+        street: 'Abasolo #849',
         colony: 'El Moralete',
         postalCode: 2860,
         municipality:'Colima'
+    },
+    getName: function(){
+        return `${this.address.street} `+'Colonia: '+ `${this.address.colony} ` + 'CP: '+ `${this.address.postalCode}` + ',' +  `${this.address.municipality}`
     }
 }
-console.log(client.address)
+console.log(client.getName()) 
